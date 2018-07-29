@@ -1,7 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I am a grahic Designer learning web development. I created this project, but I am still not very sure what it is about! 
+
 
 Things you may want to cover:
 
