@@ -1,32 +1,102 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Fengyü.</title>
+    <title>Fengyü</title>
 
-    <<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", simple_pages_about_path %></li>
-        <li><%= link_to "Contact", simple_pages_contact_path %></li>
-      </ul>
-    </nav>
+    <%= render 'simple_pages/header' %>
 
     <%= yield %>
 
-    <footer>
-      &copy; 2018 Fengyü
+    <footer id="footercontent">
+
+      <!-- Contact Grid -->
+      <div class="container-fluid">
+        <div class="row">
+
+          <!-- Column 1 -->
+          <div class="col-lg-3 col-sm-12">
+            <%= image_tag 'Logo_Fengyue-white.svg', class: "img-fluid footerlogo", alt: 'logo' %>
+          </div>
+
+          <!-- End Column 1 -->
+
+          <!-- Column 2 -->
+          <div class="col-lg-3 col-sm-12 footermenu">
+            <ul class="nav flex-column">
+              <p class="footertitle"> About us </p>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Our Story</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Production notes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fair trade</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Column 2 -->
+
+          <!-- Column 3 -->
+          <div class="col-lg-3 col-sm-12 footermenu">
+          <ul class="nav flex-column">
+            <p class="footertitle"> Legacy </p>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Shipping & return</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">General conditions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">privacy-policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">cookie-policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sitemap</a>
+            </li>
+          </ul>
+          </div>
+          <!-- End Column 3 -->
+
+          <!-- Column 4 -->
+          <div class="col-lg-3 col-sm-12 footermenu">
+            <p class="footertitle"> Follow us </p>
+            <div class="socialmedia">
+                <%= image_tag 'linkedin.svg', class: "img-fluid", id: "socialmedia-1", alt: 'social media' %>
+                <%= image_tag 'pinterest.svg', class: "img-fluid", id: "socialmedia-2", alt: 'social media' %>
+                <%= image_tag 'instagram.svg', class: "img-fluid", id: "socialmedia-3", alt: 'social media' %>
+            </div><!-- end social media -->
+          </div>
+          <!-- End Column 4 -->
+
+
+        </div><!-- /row -->
+      </div><!-- /container-fluid-->
+      <!-- End Contact Grid -->
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <a href="#contact" id="copyright-text">&copy; copyright by Fengyü 2018</a>
+      </div>
+      <!-- /copyright -->
     </footer>
   </body>
 </html>
