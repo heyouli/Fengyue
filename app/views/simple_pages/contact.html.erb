@@ -1,22 +1,24 @@
-<h1>Contact Fengyü</h1>
-<p>We are always happy to hear from you. Send us an email to <a href="mailto:info@feng-yue.de?subject=Hello">info@feng-yue.de</a></p>
-<!-- Contact Grid -->
-<div class="container-fluid">
-  <div class="row">
+<div class="contact-content">
+  <h1>Contact Fengyü</h1>
 
-    <div class="col-lg-6 col-sm-12">
-      <div class="centermail">
-        <p>Telephone:&ensp;+49-176-83&thinsp;51&thinsp;74&thinsp;16</p>
-        <a href="mailto:julia@julia-hofmann.com"><p><span class="glyphicon glyphicon-glyphicon glyphicon-envelope" aria-hidden="true"></span>&ensp;julia@julia-hofmann.com</p></a>
-</div><!-- end adress, email -->
-    </div>
+  <!-- Contact Grid -->
+  <div class="container-fluid">
+    <div class="row">
 
-    <div class="col-lg-6 col-sm-12">
-      <form class="centermail">
-        <div class="form-group form_row_one">
-          <label for="Name" class="contact_label">Name*</label>
-          <input type="text" id="Name" placeholder="Your name" class="form-control" >
-        </div><!-- end form-group Name-->
+      <div class="col-lg-6 col-sm-12">
+        <div class="centermail">
+          <p>We are always happy to hear from you. Send us an email to <a href="mailto:info@feng-yue.de?subject=Hello">info@feng-yue.de</a></p>
+          <p>Tel.:&ensp;+49-176-83&thinsp;51&thinsp;74&thinsp;16</p>
+          <a href="mailto:julia@julia-hofmann.com"><p><span class="glyphicon glyphicon-glyphicon glyphicon-envelope" aria-hidden="true"></span>&ensp;julia@julia-hofmann.com</p></a>
+        </div><!-- end adress, email -->
+      </div>
+
+      <div class="col-lg-6 col-sm-12">
+        <form class="centermail">
+          <div class="form-group form_row_one">
+            <label for="Name" class="contact_label">Name*</label>
+            <input type="text" id="Name" placeholder="Your name" class="form-control" >
+          </div><!-- end form-group Name-->
         <div class="form-group form_row_one">
           <label for="Phone" class="contact_label">Phone</label>
           <input type="tel" id="Phone" placeholder="Your phone number" class="form-control">
@@ -35,6 +37,7 @@
         </form>
       </div><!-- end form-group Message-->
       <!-- End Column 2 -->
-      <div class="col-lg-12" id="mapid">
-      </div><!-- end Map-->
+    </div>
   </div>
+  <%= image_tag("contact_map.png", class: "img-fluid map-img") %>
+</div>

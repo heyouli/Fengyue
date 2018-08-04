@@ -13,40 +13,51 @@ body {
   font-family: 'Exo', Helvetica, Arial, sans-serif;
   color: black;
   padding-top: 1%;
-  margin-bottom: 0%;
 }
+
 
 /* ============ Typography ============ */
-
 h1 {
-  font-weight: lighter;
+  font-weight: bold;
   text-align: center;
+  font-size: 1.8em;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  font-size: 2.8em;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-bottom: 2%;
+  color: black;
 }
 
+ h1::before {
+  content: '';
+  position: absolute;
+  width: 5em;
+  height: 0.05em;
+  margin-top: 1.2em;
+  margin-left:-2%;
+  margin-right: auto;
+  background: black;
+}
 
 h2 {
   font-weight: normal;
   text-transform: uppercase;
   font-size: 1.2em;
-  padding-left: 5%;
-  padding-right: 5%;
 }
-
 
 p {
   font-weight: 300;
-  letter-spacing: 0.01em;
-  line-height: 1.4em;
-  padding-left: 5%;
-  padding-right: 5%;
-
+  letter-spacing: 0.035em;
+  line-height: 1.7em;
+  font-size: 0.95em;
 }
 
+p.intro-text {
+  font-size: 1.5em;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 a {
   color: black;
@@ -58,8 +69,8 @@ a:visited {
   font-weight: 300;
 }
 
-/* ============ Navigation ============ */
 
+/* ============ Navigation ============ */
 .navbar {
   background-color: white !important;
   border-color: transparent;
@@ -68,16 +79,45 @@ a:visited {
   padding-right: 5%;
 }
 
-.navbar-brand{
+.navbar-brand {
   width: 70px;
 }
 
-/* ============ About ============ */
-.about-img{
-  padding-bottom:5%;
+
+/* ============ Index ============ */
+.index-content {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.about-img {
+  padding-bottom: 2%;
+}
+
+
+/* ============ About ============ */
+.about-content {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-grid {
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+
 /* ============ Contact ============ */
+.contact-content {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .form-control {
   color: #555;
@@ -92,17 +132,12 @@ a:visited {
   display: inline-block;
 }
 
-#mapid {
-  height: 300px;
-  width: 190px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  float: none !important;
+.map-img {
+  padding-top: 3%;
 }
 
-/* ============ Footer ============ */
 
+/* ============ Footer ============ */
 #footercontent {
   background-color: #3d3c3c!important;
   margin-top: 3%;
@@ -134,10 +169,9 @@ a:visited {
   padding-bottom: 1%;
   padding-top: 1%;
   background-color: white;
-
 }
 
-#copyright-text{
+#copyright-text {
   color: black!important;
   font-size: 0.8em;
 }
@@ -149,30 +183,30 @@ a:visited {
 }
 
 #socialmedia-1 {
-    float:left;
-    display: inline;
-    width: 50px;
-    margin-left: 1rem;
+  float:left;
+  display: inline;
+  width: 50px;
+  margin-left: 1rem;
 }
 
 #socialmedia-2 {
-    float:left;
-    display: inline;
-    width: 50px;
-    margin-left: 1rem;
+  float:left;
+  display: inline;
+  width: 50px;
+  margin-left: 1rem;
 }
 
 #socialmedia-3 {
-    float:left;
-    display: inline;
-    width: 50px;
-    margin-left: 1rem;
+  float:left;
+  display: inline;
+  width: 50px;
+  margin-left: 1rem;
 }
 
 .footerlogo {
-    width: 80px;
-    margin-left: 1rem;
-    margin-top: 1rem;
+  width: 80px;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 /*== Media Queries ==*/
@@ -187,6 +221,5 @@ a:visited {
 
   .footermenu p {
     margin-top: 3%;
-
   }
 }

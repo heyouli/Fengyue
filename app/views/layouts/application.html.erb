@@ -30,49 +30,30 @@
           <div class="col-lg-3 col-sm-12">
             <%= image_tag 'Logo_Fengyue-white.svg', class: "img-fluid footerlogo", alt: 'logo' %>
           </div>
-
           <!-- End Column 1 -->
 
           <!-- Column 2 -->
           <div class="col-lg-3 col-sm-12 footermenu">
             <ul class="nav flex-column">
               <p class="footertitle"> About us </p>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Our Story</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Production notes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Fair trade</a>
-              </li>
+              <li><%= link_to "Our Story", root_path, :class => "nav-item nav-link" %></li>
+              <li><%= link_to "Blog", root_path, :class => "nav-item nav-link" %></li>
+              <li><%= link_to "Production notes", root_path, :class => "nav-item nav-link" %></li>
+              <li><%= link_to "Fair trade", root_path, :class => "nav-item nav-link" %></li>
             </ul>
           </div>
           <!-- End Column 2 -->
 
           <!-- Column 3 -->
           <div class="col-lg-3 col-sm-12 footermenu">
-          <ul class="nav flex-column">
-            <p class="footertitle"> Legacy </p>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Shipping & return</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">General conditions</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">privacy-policy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">cookie-policy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sitemap</a>
-            </li>
-          </ul>
+            <ul class="nav flex-column">
+              <p class="footertitle"> Legacy </p>
+              <li><%= link_to "Shipping & return", root_path, :class => "nav-item nav-link" %></li>
+              <li><%= link_to "General conditions", root_path, :class => "nav-item nav-link" %></li>
+              <li><%= link_to "Privacy-policy", root_path, :class => "nav-item nav-link" %></li>
+              <li><%= link_to "Cookie-policy", root_path, :class => "nav-item nav-link" %></li>
+              <li><%= link_to "Sitemap", root_path, :class => "nav-item nav-link" %></li>
+            </ul>
           </div>
           <!-- End Column 3 -->
 
@@ -86,7 +67,6 @@
             </div><!-- end social media -->
           </div>
           <!-- End Column 4 -->
-
 
         </div><!-- /row -->
       </div><!-- /container-fluid-->
