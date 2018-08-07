@@ -68,18 +68,6 @@ a:visited {
   font-weight: 300;
 }
 
-/*== Media Queries ==*/
-@media only screen and (max-width: 991px) {
-  p.intro-text {
-    width: 100%;
-    text-align: justify;
-  }
-
-  h1 {
-    margin-bottom: 7%;
-  }
-}
-
 
 /* ============ Navigation ============ */
 .navbar {
@@ -122,17 +110,9 @@ a.nav-link {
   color: #3d3c3c;
 }
 
-/*== Media Queries ==*/
-@media only screen and (max-width: 991px) {
-  .navbar-expand {
-    margin-top: 30px;
-  }
-
-  .navbar a, .dropdown-menu a, .dropdown-menu>li>a {
-    font-size: 2em;
-  }
+.header-nav {
+  color: #3d3c3c;
 }
-
 
 /* ============ Index ============ */
 .index-content {
@@ -153,16 +133,6 @@ p.intro-text {
   margin-bottom: 2%;
   margin-left: auto;
   margin-right: auto;
-}
-
-/*== Media Queries ==*/
-@media only screen and (max-width: 991px) {
-  p.intro-text {
-    width: 100%;
-    text-align: justify;
-    letter-spacing: 0.0015em;
-    margin-bottom: 4%;
-  }
 }
 
 
@@ -193,16 +163,6 @@ p.about-text {
   margin-bottom: 2%;
 }
 
-/*== Media Queries ==*/
-@media only screen and (max-width: 991px) {
-  p.about-text {
-    width: 100%;
-    text-align: justify;
-    letter-spacing: 0.0015em;
-    margin-bottom: 4%;
-  }
-}
-
 
 /* ============ Contact ============ */
 .contact-content {
@@ -229,7 +189,7 @@ p.contact-text {
   font-size: 0.8em;
 }
 
-.form_row_one {
+.form-row-one {
   width: 49.5%;
   display: inline-block;
 }
@@ -254,28 +214,19 @@ p.contact-text {
   padding-right: 3%;
   padding-top: 2%;
   padding-bottom: 2%;
-}
-
-/*== Media Queries ==*/
-@media only screen and (max-width: 991px) {
-  p.contact-text {
-    width: 100%;
-    text-align: justify;
-    letter-spacing: 0.0015em;
-    margin-bottom: 4%;
-  }
+  margin-top: 3%;
 }
 
 
 /* ============ Footer ============ */
-#footercontent {
+#footer-content {
   background-color: #3d3c3c!important;
   margin-top: 3%;
   padding-top: 1%;
   width: 100%;
 }
 
-.footermenu {
+.footer-menu {
   color: white!important;
   font-size: 0.8em;
   line-height: 0.6em;
@@ -291,7 +242,16 @@ p.contact-text {
   color: white;
   font-weight: bold;
   padding: .5rem 1rem;
+}
 
+.footer-nav {
+  color: white!important;
+}
+
+.footer-title {
+  color: white!important;
+  font-weight: bold;
+  padding-left: 1em;
 }
 
 #copyright {
@@ -333,15 +293,49 @@ p.contact-text {
   margin-left: 1rem;
 }
 
-.footerlogo {
+.footer-logo {
   width: 80px;
   margin-left: 1rem;
   margin-top: 1rem;
 }
 
-/*== Media Queries ==*/
+
+/* ============ Media Queries ============ */
 @media only screen and (max-width: 991px) {
-  .footermenu {
+  .navbar-expand {
+    margin-top: 30px;
+  }
+
+  .navbar a, .dropdown-menu a, .dropdown-menu>li>a {
+    font-size: 2em;
+  }
+
+  h1 {
+    margin-bottom: 7%;
+  }
+
+  p.intro-text {
+    width: 100%;
+    text-align: justify;
+    letter-spacing: 0.0015em;
+    margin-bottom: 4%;
+  }
+
+  p.about-text {
+    width: 100%;
+    text-align: justify;
+    letter-spacing: 0.0015em;
+    margin-bottom: 4%;
+  }
+
+  p.contact-text {
+    width: 100%;
+    text-align: justify;
+    letter-spacing: 0.0015em;
+    margin-bottom: 4%;
+  }
+
+  .footer-menu {
     font-size: 0.8em;
     line-height: 0.6em;
     border-bottom: 1px solid white;
@@ -349,7 +343,7 @@ p.contact-text {
     padding-bottom: 3%;
   }
 
-  .footermenu p {
+  .footer-menu p {
     margin-top: 3%;
   }
 }

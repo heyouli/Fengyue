@@ -1,0 +1,58 @@
+<footer id="footer-content">
+
+  <!-- Contact Grid -->
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Column 1 -->
+      <div class="col-lg-3 col-sm-12">
+        <%= image_tag 'Logo_Fengyue-white.svg', class: "img-fluid footer-logo", alt: 'logo' %>
+      </div>
+      <!-- End Column 1 -->
+
+      <!-- Column 2 -->
+      <div class="col-lg-3 col-sm-12 footer-menu">
+        <ul class="nav flex-column">
+          <p class="footer-title"> About us </p>
+          <li><%= link_to "Our Story", root_path, :class => "footer-nav nav-item nav-link" %></li>
+          <li><%= link_to "Blog", root_path, :class => "footer-nav nav-item nav-link" %></li>
+          <li><%= link_to "Production notes", root_path, :class => "footer-nav nav-item nav-link" %></li>
+          <li><%= link_to "Fair trade", root_path, :class => "footer-nav nav-item nav-link" %></li>
+        </ul>
+      </div>
+      <!-- End Column 2 -->
+
+      <!-- Column 3 -->
+      <div class="col-lg-3 col-sm-12 footer-menu">
+        <ul class="nav flex-column">
+          <p class="footer-title"> Legacy </p>
+          <li><%= link_to "Shipping & return", root_path, :class => "footer-nav nav-item nav-link" %></li>
+          <li><%= link_to "General conditions", root_path, :class => "footer-nav nav-item nav-link" %></li>
+          <li><%= link_to "Privacy-policy", root_path, :class => "footer-nav nav-item nav-link" %></li>
+          <li><%= link_to "Cookie-policy", root_path, :class => "footer-nav nav-item nav-link" %></li>
+          <li><%= link_to "Sitemap", root_path, :class => "footer-nav nav-item nav-link" %></li>
+        </ul>
+      </div>
+      <!-- End Column 3 -->
+
+      <!-- Column 4 -->
+      <div class="col-lg-3 col-sm-12 footer-menu">
+        <p class="footer-title"> Follow us </p>
+        <div class="socialmedia">
+            <%= image_tag 'linkedin.svg', class: "img-fluid", id: "socialmedia-1", alt: 'social media' %>
+            <%= image_tag 'pinterest.svg', class: "img-fluid", id: "socialmedia-2", alt: 'social media' %>
+            <%= image_tag 'instagram.svg', class: "img-fluid", id: "socialmedia-3", alt: 'social media' %>
+        </div><!-- end social media -->
+      </div>
+      <!-- End Column 4 -->
+
+    </div><!-- /row -->
+  </div><!-- /container-fluid-->
+  <!-- End Contact Grid -->
+
+  <!-- Copyright -->
+  <div id="copyright">
+    <a href="#contact" id="copyright-text">&copy; copyright by Fengyü 2018</a>
+  </div>
+  <!-- /copyright -->
+</footer>
