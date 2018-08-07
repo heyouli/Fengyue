@@ -1,0 +1,34 @@
+<div class="index-content">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Products</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="productgallery-label">Product name</th>
+        <th class="productgallery-label">Description</th>
+        <th class="productgallery-label">Image</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody class="product-list">
+      <% @products.each do |product| %>
+        <tr>
+          <td class="productgallery-name"><%= product.name %></td>
+          <td class="productgallery-decription"><%= product.description %></td>
+          <td class="productgallery-image"><%= image_tag product.image_url, :class => 'list-image img-fluid' %></td>
+          <td class="productgallery-edit"><%= link_to 'Show', product %></td>
+          <td class="productgallery-edit"><%= link_to 'Edit', edit_product_path(product) %></td>
+          <td class="productgallery-edit"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New Product', new_product_path %>
+
+</div>

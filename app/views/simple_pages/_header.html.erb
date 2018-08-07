@@ -6,9 +6,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-      <li><%= link_to "Home", root_path, :class => "nav-link nav-item" %></li>
-      <li><%= link_to "About", simple_pages_about_path, :class => "nav-link nav-item" %></li>
-      <li><%= link_to "Contact", simple_pages_contact_path, :class => "nav-link nav-item" %></li>
+      <a href="/" class="nav-link nav-item">Home</a>
+      <a href="/simple_pages/about" class="nav-link nav-item">About</a>
+      <a href="/simple_pages/contact" class="nav-link nav-item">Contact</a>
+      <a href="/products" class="nav-link nav-item">Products</a>
     </ul>
   </div>
 </nav>
