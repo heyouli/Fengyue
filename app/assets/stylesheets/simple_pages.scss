@@ -43,6 +43,10 @@ h1 {
 p {
   font-family: 'Exo', Helvetica, Arial, sans-serif;
   color: #3d3c3c;
+  font-size: 1.15em;
+  letter-spacing: 0.02em;
+  line-height: 1.7em;
+  font-weight: 300;
 }
 
 h2 {
@@ -124,12 +128,8 @@ a.nav-link {
 }
 
 p.intro-text {
-  font-size: 1em;
   width: 85%;
   text-align: center;
-  letter-spacing: 0.02em;
-  line-height: 1.7em;
-  font-weight: 300;
   margin-bottom: 2%;
   margin-left: auto;
   margin-right: auto;
@@ -155,12 +155,10 @@ p.intro-text {
 }
 
 p.about-text {
-  font-size: 1em;
   text-align: justify;
-  letter-spacing: 0.02em;
-  line-height: 1.7em;
   font-weight: 300;
   margin-bottom: 2%;
+  margin-right: 5%;
 }
 
 
@@ -174,11 +172,7 @@ p.about-text {
 }
 
 p.contact-text {
-  font-size: 1em;
   width: 85%;
-  letter-spacing: 0.02em;
-  line-height: 1.7em;
-  font-weight: 300;
   margin-bottom: 2%;
 }
 
@@ -186,7 +180,7 @@ p.contact-text {
   background-color: white;
   border: none;
   font-weight: lighter;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .form-row-one {
@@ -200,15 +194,14 @@ p.contact-text {
 
 .contact-label {
   color: #3d3c3c;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 300;
 }
 
 #contact-button {
   background-color: #3d3c3c;
   color: #f7f3ee;
-  font-size: 0.8em;
-  font-weight: 300;
+  font-size: 1em;
   text-transform: uppercase;
   padding-left: 3%;
   padding-right: 3%;
@@ -326,13 +319,14 @@ p.contact-text {
     text-align: justify;
     letter-spacing: 0.0015em;
     margin-bottom: 4%;
+    margin-right: 0;
   }
 
   p.contact-text {
     width: 100%;
     text-align: justify;
     letter-spacing: 0.0015em;
-    margin-bottom: 4%;
+    margin-bottom: 8%;
   }
 
   .footer-menu {
