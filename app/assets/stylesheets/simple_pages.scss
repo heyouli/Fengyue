@@ -135,6 +135,53 @@ p.intro-text {
   margin-right: auto;
 }
 
+#carouselExampleIndicators {
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+.jumbotron-images {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.landing-carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.landing-carousel .carousel-indicators li.active {
+  background-color: #3d3c3c;
+}
+
+.landing-carousel .carousel-caption {
+  text-transform: uppercase;
+  position: relative;
+  right: auto;
+  left: auto;
+}
+
+.landing-carousel h5 {
+  font-size: 1em;
+  color: #3d3c3c;
+  padding-top: 1%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233d3c3c' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  height: 30px;
+  width: 30px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233d3c3c;' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  height: 30px;
+  width: 30px;
+}
 
 /* ============ About ============ */
 .about-content {
