@@ -6,10 +6,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-      <a href="/" class="header-nav nav-link nav-item">Home</a>
-      <a href="/simple_pages/about" class="header-nav nav-link nav-item">About</a>
-      <a href="/simple_pages/contact" class="header-nav nav-link nav-item">Contact</a>
-      <a href="/products" class="nav-link nav-item header-nav">Products</a>
+      <li class="header-nav nav-link nav-item"><%= link_to "Home", root_path %></li>
+      <li class="header-nav nav-link nav-item"><%= link_to "About", simple_pages_about_path %></li>
+      <li class="header-nav nav-link nav-item"><%= link_to "Contact", simple_pages_contact_path %></li>
+      <li class="header-nav nav-link nav-item"><%= link_to "Products", products_path %></li>
     </ul>
   </div>
 </nav>
