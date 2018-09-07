@@ -70,8 +70,23 @@ p.horizontal-line::after {
   text-align: center;
 }
 
-.new-product {
-  float: left;
-  margin-left: 1%;
+.product_create {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  background-color: transparent;
+  border: 1px solid #3d3c3c;
+}
+
+.btn:hover {
+  background-color: #efebe7!important;
+  border: 1px solid #3d3c3c;
+}
+
+.productedit-title {
   font-weight: bold;
+}
+
+.productedit-field {
+  margin-bottom: 3%;
 }

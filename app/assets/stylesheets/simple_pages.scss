@@ -118,6 +118,35 @@ a.nav-link {
   color: #3d3c3c;
 }
 
+.search_button {
+  background-color: #3d3c3c;
+  letter-spacing: 0.07em;
+  color: white;
+  padding: 5px;
+  border: 1px solid #3d3c3c;
+  text-align: center;
+  font-weight: 300;
+  border-bottom-right-radius: 5px;
+}
+
+.search_button:hover  {
+  font-size: 1em;
+  background-color: #4f4e4e;
+  padding: 6px;
+  text-align: center;
+}
+
+.search_field {
+  font-size: 1em;
+  margin-left: 5px;
+  background-color: transparent;
+  border-left: 1px solid #3d3c3c;
+  border-top: 1px solid #3d3c3c;
+  border-bottom: 1px solid #3d3c3c;
+  padding: 5px;
+  border-top-left-radius: 5px;
+}
+
 /* ============ Index ============ */
 .index-content {
   padding-left: 5%;
