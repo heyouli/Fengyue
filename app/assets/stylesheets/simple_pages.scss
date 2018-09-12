@@ -72,6 +72,17 @@ a:visited {
   font-weight: 300;
 }
 
+p.alert {
+  color: red;
+}
+
+p.notice {
+  color: #cba90d!important;
+  font-size: 2em;
+  font-weight: bolder;
+  padding-bottom: 2em;
+  text-align: center;
+}
 
 /* ============ Navigation ============ */
 .navbar {
