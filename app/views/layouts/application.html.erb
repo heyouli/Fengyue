@@ -16,10 +16,14 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= render 'simple_pages/header' %>
+    <% if notice %>
+    <p class="alert alert-warning" role="alert"><%= notice %></p>
+    <% end %>
 
+    <% if alert %>
+    <p class="alert alert-danger" role="alert"><%= alert %></p>
+    <% end %>
+    <%= render 'simple_pages/header' %>
     <%= yield %>
 
     <%= render 'simple_pages/footer' %>
