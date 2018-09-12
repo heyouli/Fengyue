@@ -11,11 +11,21 @@
       <li class="header-nav nav-link nav-item"><%= link_to "Contact", simple_pages_contact_path %></li>
       <li class="header-nav nav-link nav-item"><%= link_to "Products", products_path %></li>
     </ul>
-    <form class="form-inline">
+    <div>
       <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
       <%= form.text_field :q, id: 'q', value: params[:q], class: "search_field", placeholder: "Search for"  %>
       <%= form.submit 'Search', class:"my-2 my-sm-0 search_button"%>
     <% end %>
-  </form>
   </div>
-</nav>
+  <ul class="navbar-nav ml-auto">
+    <% if user_signed_in? %>
+    <li class="nav-item">
+      <%= link_to('Logout', destroy_user_session_path, method: :delete, class:"nav-link") %>
+    </li>
+    <% else %>
+    <li class="nav-item">
+      <%= link_to('Login', new_user_session_path, class:"nav-link") %>
+    </li>
+    <% end %>
+  </li>
+</ul>
