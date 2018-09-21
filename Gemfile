@@ -69,3 +69,5 @@ gem 'devise'
 gem 'cancancan', '~> 2.2'
 
 gem 'font-awesome-sass'
+
+gem 'will_paginate', '~> 3.1.6'

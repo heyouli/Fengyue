@@ -30,8 +30,9 @@
         <%= render 'new_comment' %>
       </div>
 
-    <div class="col-lg-12 product-comments">
+      <div class="col-lg-12 product-comments">
         <%= render 'comments' %>
+        <%= will_paginate @comments %>
     </div>
 
 </div>
