@@ -4,6 +4,8 @@
 
     <div class="col-sm-12 col-lg-6">
       <%= image_tag(@product.image_url, class: "img-fluid") if @product.image_url%>
+      <%= link_to 'Edit', edit_product_path(@product) %> |
+      <%= link_to 'Back', products_path %>
     </div>
 
     <div class="col-sm-12 col-lg-6">
@@ -13,20 +15,25 @@
       <p class="productgallery-decription">
         <%= @product.description %>
       </p>
-      <p class="productgalleryprice-tag">
-        <%= @product.price %>€
-      </p>
-      <strong>Overview</strong>
+      <p class="text-bold">Overview</p>
       <p class="productgallery-decription">
         Color: <%= @product.colour %>
       </p>
-  <p>
-     <strong>Reviews:</strong>
-     <%= @product.highest_rating_comment %>
-   </p>
-   <%= link_to 'Edit', edit_product_path(@product) %> |
-   <%= link_to 'Back', products_path %>
- </div>
+      <p class="productgalleryprice-tag">
+        <%= number_to_currency(@product.price, :unit => "€") %>
+      </p>
+      <div class="star-rating">
+        <div class="rated star-rating" data-score="<%= @product.average_rating %>">
+        </div>
+        <%= @product.highest_rating_comment %>
+      </div>
+        <%= render 'new_comment' %>
+      </div>
+
+    <div class="col-lg-12 product-comments">
+        <%= render 'comments' %>
+    </div>
+
 </div>
 </div>
 </div>

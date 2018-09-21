@@ -5,8 +5,7 @@
     <p class="productgallery-decription"><%= product.description %></p>
     <p class="productgallery-color">Color: <%= product.colour %></p>
     <p class="productgallery-price"><%= product.price %>€</p>
-  </div>
-
+  </div>  
   <div class="productgallery-edit">
     <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
     <p class="horizontal-line"><%= link_to 'Show', product %></p>
