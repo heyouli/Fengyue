@@ -10,28 +10,28 @@
   margin-right: auto;
 }
 
-.productgallery-name {
+.product-gallery-name {
   font-size: 1.15em;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.productgallery-decription {
+.product-gallery-decription {
   font-size: 1em;
   font-weight: 300;
 }
 
-.productgallery-color {
+.product-gallery-color {
   font-size: 1em;
   font-weight: 300;
 }
 
-.productgallery-price {
+.product-gallery-price {
   font-size: 1em;
   font-weight: bold;
 }
 
-.productgalleryprice-tag  {
+.product-galleryprice-tag  {
   font-size: 2em;
   font-weight: bold;
 }
@@ -42,7 +42,7 @@
   text-transform: uppercase;
 }
 
-.productgallery-edit p {
+.product-gallery-edit p {
   float:right;
   padding-right: 2%;
   margin-top: 2%;
@@ -60,7 +60,7 @@ p.horizontal-line::after {
  background: #3d3c3c;
 }
 
-.productgallery-info {
+.product-gallery-info {
   background-color: white;
   padding-top: 5%;
   padding-bottom: 2%;
@@ -85,16 +85,21 @@ p.horizontal-line::after {
   border: 1px solid #3d3c3c;
 }
 
-.btn:hover {
-  background-color: #efebe7!important;
-  border: 1px solid #3d3c3c;
+.product_create:hover {
+  background-color: #3d3c3c!important;
+  color: white;
+  border: none;
 }
 
-.productedit-title {
+.product_create:active {
+  color:white!important;
+}
+
+.product-edit-title {
   font-weight: bold;
 }
 
-.productedit-field {
+.product-edit-field {
   margin-bottom: 3%;
 }
 
@@ -105,25 +110,23 @@ p.horizontal-line::after {
   margin-right: auto;
 }
 
-.productcomments-user {
+.product-comments-user {
   font-size: 1em;
   font-weight: 300;
-  color: red!important;
   text-align: left;
   margin-bottom: 100em;
 }
 
-.productcomments-star {
+.product-comments-star {
   padding-left: 2em;
   padding-right: 2em;
 }
 
-.productcomments-text {
-  font-size: 1em;
+.product-comments-text {
   font-weight: 300;
-  color: red!important;
   text-align: left;
   margin-bottom: 100em;
+  margin-right: 2em;
 }
 
 .product-comments {

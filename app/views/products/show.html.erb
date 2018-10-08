@@ -12,20 +12,22 @@
       <p class="productname-show">
         <%= @product.name %>
       </p>
-      <p class="productgallery-decription">
+      <p class="product-gallery-decription">
         <%= @product.description %>
       </p>
       <p class="text-bold">Overview</p>
-      <p class="productgallery-decription">
+      <p class="product-gallery-decription">
         Color: <%= @product.colour %>
       </p>
-      <p class="productgalleryprice-tag">
+      <p class="product-galleryprice-tag">
         <%= number_to_currency(@product.price, :unit => "€") %>
       </p>
       <div class="star-rating">
         <div class="rated star-rating" data-score="<%= @product.average_rating %>">
         </div>
+        <% if !@product.highest_rating_comment.nil? %>
         <%= @product.highest_rating_comment.body %>
+        <% end %>
       </div>
         <%= render 'new_comment' %>
       </div>
