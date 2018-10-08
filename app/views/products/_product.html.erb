@@ -1,7 +1,7 @@
 <div class="col-sm-12 col-md-6 col-lg">
   <div  class="product-gallery-image"><%= image_tag(product.image_url, class: "img-fluid") %></div>
   <div class="product-gallery-info">
-    <a href="#"><p class="product-gallery-name"><%= product.name %></p></a>
+    <p class="product-gallery-name"><%= link_to product.name, product %></p>
     <p class="product-gallery-decription"><%= product.description %></p>
     <p class="product-gallery-color">Color: <%= product.colour %></p>
     <p class="product-gallery-price"><%= product.price %>€</p>
