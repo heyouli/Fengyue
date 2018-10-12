@@ -1,14 +1,13 @@
 require 'rails_helper'
 
 describe Comment do
-    context "when the product has comments" do
-        let(:user){ Comment.create(:user) }
+  context "when the product has comments" do
+
+        let(:user) {User.create!(email:"julia@example.com", password:"123456")}
         let(:product){ Product.create!(name: "Cusion")}
+        let(:comment) {Comment.create(user_id: user.id, product_id: product.id, body: "Dies ist ein Text")}
 
-        before do
-            product.comments.create!(body: "This is a text.")
-
-        it "not valid without a rating"
+        it "not valid without a rating" do
           comment.rating = nil
           expect(comment).to_not be_valid
         end
