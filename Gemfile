@@ -44,6 +44,9 @@ group :development, :test do
   gem 'sqlite3'
   # Use rspec-rails as test framework
   gem 'rspec-rails', '~> 3.8'
+  # Use FactoryBot with tests
+  gem "factory_bot_rails"
+
 end
 
 group :development do
