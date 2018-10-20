@@ -17,6 +17,7 @@ end # Makes comments resources are a subset of products.
   get 'orders/index'
   get 'orders/show'
   post 'simple_pages/thank_you'
+  post 'payments/create'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 
