@@ -46,7 +46,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.8'
   # Use FactoryBot with tests
   gem "factory_bot_rails"
-
+  # Use Faker with tests
+  gem "faker"
 end
 
 group :development do
