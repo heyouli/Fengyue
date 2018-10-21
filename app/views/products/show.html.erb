@@ -30,10 +30,12 @@
         <% end %>
       </div>
       <%= form_with(url: '/payments/create') do |form| %>
-        <%= render partial: "shared/stripe_checkout_button" %> 
+        <%= render partial: "shared/stripe_checkout_button" %>
         <%= hidden_field_tag(:product_id, @product.id) %>
       <% end %>
-        <%= render 'new_comment' %>
+        <div id="comment-margins">
+          <%= render 'new_comment' %>
+        </div>
       </div>
 
       <div class="col-lg-12 product-comments">

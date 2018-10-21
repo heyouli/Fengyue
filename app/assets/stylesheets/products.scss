@@ -125,7 +125,7 @@ p.horizontal-line::after {
 .product-comments-text {
   font-weight: 300;
   text-align: left;
-  margin-bottom: 100em;
+  margin-bottom: 1em;
   margin-right: 2em;
 }
 
@@ -147,4 +147,8 @@ p.horizontal-line::after {
 
 .pagination > * {
   margin-left: 1em;
+}
+
+#comment-margins {
+  margin-top: 1em;
 }
