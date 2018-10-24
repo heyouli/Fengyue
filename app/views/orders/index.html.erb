@@ -1,14 +1,18 @@
-<div class="page-contents container">
-  <div class="row">
-    <% @orders.each do |order| %>
-      <div class="orders_box col-sm-2 col-md-4">
-        <h1>
-          Order # <%= order.id %>:
-          <%= link_to order.product.name, order %>
-        </h1>
-        <p><%= order.product.description %></p>
-        <strong><%= number_to_currency(order.product.price.to_f, unit: "€", separator: ",") %></strong>
+  <div class="order-content">
+    <h1>Orders</h1>
+    <div class="row order-table">
+      <% @orders.each do |order| %>
+      <div class="col-sm">
+        <h2><strong>Order # <%= order.id %></strong></h2>
+        <h2><%= link_to order.product.name, order %></h2>
+        <%= image_tag(order.product.image_url, class: "img-fluid order-img") %>
+        <div class="order-description">
+          <p><%= order.product.description if order.product %></p>
+        </div>
+        <div class="order-price"
+          <strong>$ <%= order.product.price if order.product %></strong>
+        </div>
       </div><!-- /col -->
-    <% end %>
-  </div>
+      <% end %>
+    </div>
 </div>
