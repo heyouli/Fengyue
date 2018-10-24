@@ -1,6 +1,7 @@
 <div class="product-reviews">
     <% @comments.each do |comment| %>
-    <div>
+      <%= render comment %>
+    <!--div>
 
     </div>
         <div class="row">
@@ -12,7 +13,6 @@
                 <%= link_to ('<span class="fas fa-trash"></span>').html_safe, product_comment_path(comment.product, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
             <% end %>
             </p>
-          </div>
-
+          </div> -->
     <% end %>
 </div>
