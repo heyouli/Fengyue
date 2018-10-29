@@ -3,7 +3,7 @@ Rails.application.configure do
 
   #Dynamic links generate the right URLs.
   config.action_mailer.default_url_options = { host: 'fenygue.herokuapp.com' }
-  
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -61,6 +61,15 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
+   config.cache_store = :dalli_store,
+     (ENV["mc4.dev.ec2.memcachier.com:11211"] || "").split(","),
+     {:username => ENV["944DF9"],
+      :password => ENV["AA0065A62A78068C4DC8EA52EA9774D8"],
+      :failover => true,
+      :socket_timeout => 1.5,
+      :socket_failure_delay => 0.2,
+      :down_retry_delay => 60
+     }
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
