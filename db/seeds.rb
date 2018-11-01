@@ -10,4 +10,4 @@ Product.destroy_all
 User.destroy_all
 Order.destroy_all
 product = Product.create(name: "seed-generated product", description: "I created this product without using the HTML form!", image_url: "http://media.istockphoto.com/photos/kitten-on-a-white-background-picture-id511458158?k=6&m=511458158&s=170667a&w=0&h=YS27-I0nj5x89iDRUZ2YxE77hEghPb0HNCWwPCrMmn8=", price: 22)
-order =Order.create(user_id: 1, product_id: 1, total: 22)
+# order =Order.create(user_id: 1, product_id: 1, total: 22)
