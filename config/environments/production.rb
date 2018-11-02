@@ -103,4 +103,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #allow ActionCable requests on production
+  config.web_socket_server_url = "wss://fenygue.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://fenygue.herokuapp.com', 'http://fenygue.herokuapp.com']
+
 end
