@@ -2,13 +2,13 @@
   <div class="container">
   <div class="row">
 
-    <div class="col-sm-12 col-lg-6">
-      <%= image_tag(@product.image_url, width: "550", class: "img-fluid", class: "img-zoom", data_zoom_image:@product.image_url) if @product.image_url%>
+    <div class="col-sm-12 col-lg-6 productinfo-left">
+      <%= image_tag(@product.image_url, class: "img-fluid img-zoom", data_zoom_image:@product.image_url) if @product.image_url%>
       <%= link_to 'Edit', edit_product_path(@product) %> |
       <%= link_to 'Back', products_path %>
     </div>
 
-    <div class="col-sm-12 col-lg-6">
+    <div class="col-sm-12 col-lg-6 productinfo-right">
       <p class="productname-show">
         <%= @product.name %>
       </p>

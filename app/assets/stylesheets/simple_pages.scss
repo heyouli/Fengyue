@@ -58,12 +58,12 @@ h2 {
 
 a {
   font-family: 'Exo', Helvetica, Arial, sans-serif;
-  color: #3d3c3c;
+  color: #cba90d;
   font-weight: 300;
 }
 
 a:hover {
-  color: grey;
+  color: #cba90d;
   background-color: transparent;
 }
 
@@ -71,6 +71,12 @@ a:visited {
   color: #3d3c3c;
   font-weight: 300;
 }
+
+a:visited:hover {
+  color: #cba90d;
+  font-weight: 300;
+}
+
 
 p.success-note {
   color: grey;

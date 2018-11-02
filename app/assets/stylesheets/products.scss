@@ -152,3 +152,24 @@ p.horizontal-line::after {
 #comment-margins {
   margin-top: 1em;
 }
+
+.productinfo-left {
+  display: inline;
+  padding-left: 0;
+  padding-right: 1px;
+}
+
+.productinfo-right {
+  padding-left: 30px;
+  padding-right: 0;
+  display: inline;
+}
+
+/* ============ Media Queries ============ */
+@media only screen and (max-width: 991px) {
+  .productinfo-right {
+    float: right;
+    padding-left: 0px;
+    margin-top: 3em;
+    }
+  }
