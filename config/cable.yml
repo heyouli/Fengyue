@@ -7,4 +7,4 @@ test:
 production:
   adapter: postgresql
   url: postgres://likvyxdxopkuew:72a08a089bc68a899d55c855059cad5b3f51f2d5c699ce4b9235547b7b89d664@ec2-50-17-250-38.compute-1.amazonaws.com:5432/d2282jesbcthc2
-  channel_prefix: nameofapp_production
+  channel_prefix: Fengyue_production
