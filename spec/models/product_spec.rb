@@ -13,8 +13,21 @@ describe Product do
      product.comments.create!(rating:5, user:@user, body:"Great postcard!")
 end
 
+  it "returns the highest rating comment" do
+    expect(product.highest_rating_comment.rating).to eq 5
+    expect(product.highest_rating_comment.body).to eq "Great postcard!"
+  end
+
+  it "returns the lowest rating comment" do
+    expect(product.lowest_rating_comment.rating).to eq 1
+    expect(product.lowest_rating_comment.body).to eq "Awful postcard!"
+  end
+
   it "returns the average rating of all comments" do
     expect(product.average_rating).to eq 3
+  end
+
+  it "is not valid without a comment" do
     expect(Product.new(description: "I am a description")).not_to be_valid
   end
 end
